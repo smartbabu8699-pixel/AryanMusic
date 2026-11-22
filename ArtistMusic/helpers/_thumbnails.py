@@ -29,7 +29,7 @@ from ArtistMusic import config
 from ArtistMusic.helpers import Track
 
 SIZE = (1280, 720)
-BRAND_TEXT = "ArtistBots"
+BRAND_TEXT = "smart music"
 WHITE = (255, 255, 255, 255)
 SOFT_WHITE = (255, 255, 255, 190)
 RED_COLOR = (230, 57, 53, 255)
@@ -66,7 +66,6 @@ def _load_font(paths, size):
 
 def _is_latin(text: str) -> bool:
     return all(ord(c) < 0x250 or not c.isalpha() for c in text)
-
 
 def _fit_text(draw, text, font, max_w):
     """Trim text with an ellipsis so it fits in max_w pixels."""
